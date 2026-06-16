@@ -11,8 +11,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BidMachinePlus",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/1.0.0-test.7/package/BidMachinePlus.xcframework.zip",
-            checksum: "cc0886ab84c7c07fb4872b12b075bc9ef4582f13273361ac9d9df34ded150527"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/1.0.0-test.8/package/BidMachinePlus.xcframework.zip",
+            checksum: "67de3d425f3510e59f7023a86a6b7c54bf73bc3f7d8841bf3e5376a5bc9bbaa2"
         ),
         .binaryTarget(
             name: "BidMachine",
@@ -31,8 +31,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "BidonAdapterBidMachine",
-            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/BidonAdapterBidMachine/3.6.1.1/BidonAdapterBidMachine.zip",
-            checksum: "1a511b23ff834ee57b8e214febbfd4d2b2ba4418bf2dac1a4eb3a584b2a24865"
+            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/BidonAdapterBidMachine/3.6.1.2/BidonAdapterBidMachine.zip",
+            checksum: "733a861d2ffa339bd6673f5bc56a0bb0882f4a5a5a741b96f65438a1c3a72624"
         ),
         .target(
             name: "BidMachinePlusTarget",

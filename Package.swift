@@ -11,13 +11,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BidMachinePlus",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/1.0.0-test.8/package/BidMachinePlus.xcframework.zip",
-            checksum: "67de3d425f3510e59f7023a86a6b7c54bf73bc3f7d8841bf3e5376a5bc9bbaa2"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/1.0.0-test.9/package/BidMachinePlus.xcframework.zip",
+            checksum: "764a47fc8d2227b4c23b5de2fb3cf6950bcc27fba7e19476a713493223fb56f4"
         ),
         .binaryTarget(
             name: "BidMachine",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachine/3.6.1/package/BidMachine.xcframework.zip",
-            checksum: "5959c05caa4e1428e6bad192fc1d87799003faf6d9f1d376729dcc9e61de787b"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachine/3.7.1/package/BidMachine.xcframework.zip",
+            checksum: "a033bfaccb55467a1dda8012110534726dd59337f9203db47cfafe023d5b1271"
         ),
         .binaryTarget(
             name: "OMSDK_Appodeal",
@@ -26,13 +26,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Bidon",
-            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/Bidon/0.14.0/Bidon.zip",
-            checksum: "07d796da320504322d2d62742ef462d39e6c9e5c6f5fb192422954fff038743d"
+            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/Bidon/0.15.0/Bidon.zip",
+            checksum: "b3f33428add1e47e38dbea964cb5986aec1344e4f03653c7d475379369ee4ebc"
         ),
         .binaryTarget(
             name: "BidonAdapterBidMachine",
-            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/BidonAdapterBidMachine/3.6.1.2/BidonAdapterBidMachine.zip",
-            checksum: "733a861d2ffa339bd6673f5bc56a0bb0882f4a5a5a741b96f65438a1c3a72624"
+            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/BidonAdapterBidMachine/3.7.1.2/BidonAdapterBidMachine.zip",
+            checksum: "e227226fc431651bc26bddf8a8c81ae8ecce66a9e62e6691eacc9c0dbdfbb9f6"
         ),
         .target(
             name: "BidMachinePlusTarget",

@@ -6,33 +6,28 @@ let package = Package(
     name: "BidMachinePlus",
     platforms: [.iOS(.v13)],
     products: [
-        .library(name: "BidMachinePlus", targets: ["BidMachinePlusTarget"])
+        .library(name: "BidMachinePlus", targets: ["BidMachinePlusTarget"]),
+        .library(name: "MediationAdapterAPI", targets: ["MediationAdapterAPI"])
     ],
     targets: [
         .binaryTarget(
             name: "BidMachinePlus",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.1.0/package/BidMachinePlus.xcframework.zip",
-            checksum: "40a3257b6b75e96ef798990bb5c3df863a156cf49c2bd54b0fb7a48889a1c1a3"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.1.1/package/BidMachinePlus.xcframework.zip",
+            checksum: "fa2ac5701b33d9761aa9e4b75a7baebfefa8338fb85278754d9dabf1233bcf19"
         ),
         .binaryTarget(
             name: "BidMachine",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachine/3.7.1/package/BidMachine.xcframework.zip",
-            checksum: "a033bfaccb55467a1dda8012110534726dd59337f9203db47cfafe023d5b1271"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachine/3.8.0/package/BidMachine.xcframework.zip",
+            checksum: "b46919e3d033f35bd556e3a34a73ef9af3e27cdcac21baf476a2ee82f935a975"
         ),
         .binaryTarget(
             name: "OMSDK_Appodeal",
             url: "https://bidmachine-ios.s3.amazonaws.com/OMSDK_Appodeal/1.6.3/package/OMSDK_Appodeal.xcframework.zip",
             checksum: "3e3f791957a55085954608740455c6abad2d1f4381e5a4263242289030f7976f"
         ),
-        .binaryTarget(
-            name: "Bidon",
-            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/Bidon/0.15.0/Bidon.zip",
-            checksum: "b3f33428add1e47e38dbea964cb5986aec1344e4f03653c7d475379369ee4ebc"
-        ),
-        .binaryTarget(
-            name: "BidonAdapterBidMachine",
-            url: "https://bidon-ios.s3.eu-central-1.amazonaws.com/BidonAdapterBidMachine/3.7.1.2/BidonAdapterBidMachine.zip",
-            checksum: "e227226fc431651bc26bddf8a8c81ae8ecce66a9e62e6691eacc9c0dbdfbb9f6"
+        .target(
+            name: "MediationAdapterAPI",
+            path: "Sources/MediationAdapterAPI"
         ),
         .target(
             name: "BidMachinePlusTarget",
@@ -40,8 +35,7 @@ let package = Package(
                 "BidMachinePlus",
                 "BidMachine",
                 "OMSDK_Appodeal",
-                "Bidon",
-                "BidonAdapterBidMachine"
+                "MediationAdapterAPI"
             ],
             path: "Sources/BidMachinePlusTarget",
             sources: ["."],

@@ -9,21 +9,15 @@ let package = Package(
         .library(name: "BidMachinePlus", targets: ["BidMachinePlusTarget"]),
         .library(name: "MediationAdapterAPI", targets: ["MediationAdapterAPI"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/bidmachine/BidMachine-SPM.git", exact: "3.8.0"),
+        .package(url: "https://github.com/bidmachine/OMSDK-Appodeal-iOS-Package", exact: "1.6.3")
+    ],
     targets: [
         .binaryTarget(
             name: "BidMachinePlus",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.1.1/package/BidMachinePlus.xcframework.zip",
-            checksum: "fa2ac5701b33d9761aa9e4b75a7baebfefa8338fb85278754d9dabf1233bcf19"
-        ),
-        .binaryTarget(
-            name: "BidMachine",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachine/3.8.0/package/BidMachine.xcframework.zip",
-            checksum: "b46919e3d033f35bd556e3a34a73ef9af3e27cdcac21baf476a2ee82f935a975"
-        ),
-        .binaryTarget(
-            name: "OMSDK_Appodeal",
-            url: "https://bidmachine-ios.s3.amazonaws.com/OMSDK_Appodeal/1.6.3/package/OMSDK_Appodeal.xcframework.zip",
-            checksum: "3e3f791957a55085954608740455c6abad2d1f4381e5a4263242289030f7976f"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.1.2/package/BidMachinePlus.xcframework.zip",
+            checksum: "27347b5de736445808fb84c3b8c7aeacc7a246b7b9421029bfeaeeb86c4d842b"
         ),
         .target(
             name: "MediationAdapterAPI",
@@ -33,8 +27,8 @@ let package = Package(
             name: "BidMachinePlusTarget",
             dependencies: [
                 "BidMachinePlus",
-                "BidMachine",
-                "OMSDK_Appodeal",
+                .product(name: "BidMachine", package: "BidMachine-SPM"),
+                .product(name: "OMSDK_Appodeal", package: "OMSDK-Appodeal-iOS-Package"),
                 "MediationAdapterAPI"
             ],
             path: "Sources/BidMachinePlusTarget",

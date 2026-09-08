@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BidMachinePlus",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.1.2/package/BidMachinePlus.xcframework.zip",
-            checksum: "27347b5de736445808fb84c3b8c7aeacc7a246b7b9421029bfeaeeb86c4d842b"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.1.3/package/BidMachinePlus.xcframework.zip",
+            checksum: "922868e1655bacc27082c18c21f7eb326f8a182c7e136a4efe0d82aa72526179"
         ),
         .target(
             name: "MediationAdapterAPI",

@@ -16,12 +16,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BidMachinePlus",
-            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.1.3/package/BidMachinePlus.xcframework.zip",
-            checksum: "3db4ab5ed44d8871a31a081f509648eb8e748db0660e72ad9034c9bb03033ba7"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.2.0-beta.10/package/BidMachinePlus.xcframework.zip",
+            checksum: "2ea9ac8592e1d6b021d60abd321d7166feafbf710b324032646b6bccf5e232b7"
         ),
-        .target(
+        .binaryTarget(
             name: "MediationAdapterAPI",
-            path: "Sources/MediationAdapterAPI"
+            url: "https://bidmachine-ios.s3.amazonaws.com/BidMachinePlus/0.2.0-beta.10/package/MediationAdapterAPI.xcframework.zip",
+            checksum: "b2ec747a4e0a5c89e0aa3acdab4d92f3e880de214ab6b941338d09139de5516d"
         ),
         .target(
             name: "BidMachinePlusTarget",
